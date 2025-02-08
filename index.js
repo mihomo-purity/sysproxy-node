@@ -37,7 +37,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./sysproxy.android-arm64.node')
           } else {
-            nativeBinding = require('@mihomo-party/sysproxy-android-arm64')
+            nativeBinding = require('@mihomo-purity/sysproxy-android-arm64')
           }
         } catch (e) {
           loadError = e
@@ -49,7 +49,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./sysproxy.android-arm-eabi.node')
           } else {
-            nativeBinding = require('@mihomo-party/sysproxy-android-arm-eabi')
+            nativeBinding = require('@mihomo-purity/sysproxy-android-arm-eabi')
           }
         } catch (e) {
           loadError = e
@@ -69,7 +69,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./sysproxy.win32-x64-msvc.node')
           } else {
-            nativeBinding = require('@mihomo-party/sysproxy-win32-x64-msvc')
+            nativeBinding = require('@mihomo-purity/sysproxy-win32-x64-msvc')
           }
         } catch (e) {
           loadError = e
@@ -83,7 +83,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./sysproxy.win32-ia32-msvc.node')
           } else {
-            nativeBinding = require('@mihomo-party/sysproxy-win32-ia32-msvc')
+            nativeBinding = require('@mihomo-purity/sysproxy-win32-ia32-msvc')
           }
         } catch (e) {
           loadError = e
@@ -97,7 +97,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./sysproxy.win32-arm64-msvc.node')
           } else {
-            nativeBinding = require('@mihomo-party/sysproxy-win32-arm64-msvc')
+            nativeBinding = require('@mihomo-purity/sysproxy-win32-arm64-msvc')
           }
         } catch (e) {
           loadError = e
@@ -113,10 +113,10 @@ switch (platform) {
       if (localFileExisted) {
         nativeBinding = require('./sysproxy.darwin-universal.node')
       } else {
-        nativeBinding = require('@mihomo-party/sysproxy-darwin-universal')
+        nativeBinding = require('@mihomo-purity/sysproxy-darwin-universal')
       }
       break
-    } catch {}
+    } catch { }
     switch (arch) {
       case 'x64':
         localFileExisted = existsSync(join(__dirname, 'sysproxy.darwin-x64.node'))
@@ -124,7 +124,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./sysproxy.darwin-x64.node')
           } else {
-            nativeBinding = require('@mihomo-party/sysproxy-darwin-x64')
+            nativeBinding = require('@mihomo-purity/sysproxy-darwin-x64')
           }
         } catch (e) {
           loadError = e
@@ -138,7 +138,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./sysproxy.darwin-arm64.node')
           } else {
-            nativeBinding = require('@mihomo-party/sysproxy-darwin-arm64')
+            nativeBinding = require('@mihomo-purity/sysproxy-darwin-arm64')
           }
         } catch (e) {
           loadError = e
@@ -157,7 +157,7 @@ switch (platform) {
       if (localFileExisted) {
         nativeBinding = require('./sysproxy.freebsd-x64.node')
       } else {
-        nativeBinding = require('@mihomo-party/sysproxy-freebsd-x64')
+        nativeBinding = require('@mihomo-purity/sysproxy-freebsd-x64')
       }
     } catch (e) {
       loadError = e
@@ -174,7 +174,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./sysproxy.linux-x64-musl.node')
             } else {
-              nativeBinding = require('@mihomo-party/sysproxy-linux-x64-musl')
+              nativeBinding = require('@mihomo-purity/sysproxy-linux-x64-musl')
             }
           } catch (e) {
             loadError = e
@@ -187,7 +187,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./sysproxy.linux-x64-gnu.node')
             } else {
-              nativeBinding = require('@mihomo-party/sysproxy-linux-x64-gnu')
+              nativeBinding = require('@mihomo-purity/sysproxy-linux-x64-gnu')
             }
           } catch (e) {
             loadError = e
@@ -203,7 +203,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./sysproxy.linux-arm64-musl.node')
             } else {
-              nativeBinding = require('@mihomo-party/sysproxy-linux-arm64-musl')
+              nativeBinding = require('@mihomo-purity/sysproxy-linux-arm64-musl')
             }
           } catch (e) {
             loadError = e
@@ -216,7 +216,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./sysproxy.linux-arm64-gnu.node')
             } else {
-              nativeBinding = require('@mihomo-party/sysproxy-linux-arm64-gnu')
+              nativeBinding = require('@mihomo-purity/sysproxy-linux-arm64-gnu')
             }
           } catch (e) {
             loadError = e
@@ -232,7 +232,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./sysproxy.linux-arm-musleabihf.node')
             } else {
-              nativeBinding = require('@mihomo-party/sysproxy-linux-arm-musleabihf')
+              nativeBinding = require('@mihomo-purity/sysproxy-linux-arm-musleabihf')
             }
           } catch (e) {
             loadError = e
@@ -245,7 +245,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./sysproxy.linux-arm-gnueabihf.node')
             } else {
-              nativeBinding = require('@mihomo-party/sysproxy-linux-arm-gnueabihf')
+              nativeBinding = require('@mihomo-purity/sysproxy-linux-arm-gnueabihf')
             }
           } catch (e) {
             loadError = e
@@ -261,7 +261,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./sysproxy.linux-riscv64-musl.node')
             } else {
-              nativeBinding = require('@mihomo-party/sysproxy-linux-riscv64-musl')
+              nativeBinding = require('@mihomo-purity/sysproxy-linux-riscv64-musl')
             }
           } catch (e) {
             loadError = e
@@ -274,7 +274,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./sysproxy.linux-riscv64-gnu.node')
             } else {
-              nativeBinding = require('@mihomo-party/sysproxy-linux-riscv64-gnu')
+              nativeBinding = require('@mihomo-purity/sysproxy-linux-riscv64-gnu')
             }
           } catch (e) {
             loadError = e
@@ -289,7 +289,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./sysproxy.linux-s390x-gnu.node')
           } else {
-            nativeBinding = require('@mihomo-party/sysproxy-linux-s390x-gnu')
+            nativeBinding = require('@mihomo-purity/sysproxy-linux-s390x-gnu')
           }
         } catch (e) {
           loadError = e

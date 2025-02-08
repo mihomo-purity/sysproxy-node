@@ -1,11 +1,11 @@
-# `@mihomo-party/sysproxy`
+# `@mihomo-purity/sysproxy`
 
-![https://github.com/mihomo-party-org/sysproxy-node/actions](https://github.com/mihomo-party-org/sysproxy-node/workflows/CI/badge.svg)
+![https://github.com/mihomo-purity/sysproxy-node/actions](https://github.com/mihomo-purity/sysproxy-node/workflows/CI/badge.svg)
 
 ## Install this test package
 
 ```
-pnpm add @mihomo-party/sysproxy
+pnpm add @mihomo-purity/sysproxy
 ```
 
 ## Support matrix
